@@ -1,1 +1,32 @@
+{
+  "accountAccess": {
+    "type": "screen",
+    "header": "",
+    "illustrationAlt": "Hand holding phone with Venmo app surrounded by icons of money, pizza, and emojis.",
+    "buttons": {
+      "primary": "buttons.createAccount",
+      "secondary": "buttons.logIn"
+    }
+  },
+
+  "accountType": {
+    "type": "halfSheet",
+    "header": "How will you use Venmo?",
+    "options": {
+      "personal": {
+        "label": "Personal"
+      },
+      "teen": {
+        "label": "Teen"
+      },
+      "business": {
+        "label": "Business"
+      }
+    },
+    "legalText": "Pay and accept money from friends and businesses, emoji and comments encouraged. Must be at least 18 years old.",
+    "buttons": {
+      "primary": "buttons.getStarted"
+    }
+  }
+}
 
