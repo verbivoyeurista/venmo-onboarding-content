@@ -1,1 +1,19 @@
+{
+  "flow": {
+    "id": "venmoOnboarding",
+    "name": "Venmo Onboarding Flow",
+    "screens": [
+      {
+        "id": "accountAccess",
+        "next": "accountType",
+        "description": "Entry screen where users can create an account or log in."
+      },
+      {
+        "id": "accountType",
+        "next": "phoneVerification",
+        "description": "User chooses between Personal, Teen, or Business account types."
+      }
+    ]
+  }
+}
 
