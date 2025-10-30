@@ -12,8 +12,17 @@
         "id": "accountType",
         "next": "phoneVerification",
         "description": "User chooses between Personal, Teen, or Business account types."
+      },
+      {
+        "id": "phoneVerification",
+        "next": "codeVerification",
+        "description": "Collect and confirm the user’s phone number."
+      },
+      {
+        "id": "codeVerification",
+        "next": "userName",
+        "description": "User enters 6-digit OTP sent via SMS."
       }
     ]
   }
 }
-
