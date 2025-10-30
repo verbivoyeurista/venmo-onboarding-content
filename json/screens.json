@@ -13,20 +13,48 @@
     "type": "halfSheet",
     "header": "How will you use Venmo?",
     "options": {
-      "personal": {
-        "label": "Personal"
-      },
-      "teen": {
-        "label": "Teen"
-      },
-      "business": {
-        "label": "Business"
-      }
+      "personal": { "label": "Personal" },
+      "teen": { "label": "Teen" },
+      "business": { "label": "Business" }
     },
     "legalText": "Pay and accept money from friends and businesses, emoji and comments encouraged. Must be at least 18 years old.",
     "buttons": {
       "primary": "buttons.getStarted"
     }
+  },
+
+  "phoneVerification": {
+    "type": "halfSheet",
+    "header": "What’s your number?",
+    "helperText": "We’ll send you a verification code.",
+    "fields": {
+      "phone": {
+        "label": "Phone number",
+        "placeholder": "123-456-7890"
+      }
+    },
+    "legalText": "By tapping Next, you confirm your number and agree to receive a verification code. Carrier fees may apply.",
+    "buttons": {
+      "primary": "buttons.next"
+    }
+  },
+
+  "codeVerification": {
+    "type": "halfSheet",
+    "header": "Enter the code",
+    "helperText": "We sent it to {{phone.masked}}",
+    "fields": {
+      "otp": {
+        "label": "Verification code",
+        "digits": 6,
+        "placeholder": "Enter 6-digit code"
+      }
+    },
+    "buttons": {
+      "primary": "buttons.confirm"
+    },
+    "tertiary": {
+      "resend": "buttons.resendCode"
+    }
   }
 }
-
