@@ -84,5 +84,32 @@
     "buttons": {
       "primary": "buttons.next"
     }
+  },
+
+  "legalTerms": {
+    "type": "scrollSheet",
+    "header": "Legal terms",
+    "bodyText": "Please review and accept Venmo’s User Agreement and Privacy Policy before continuing.",
+    "links": {
+      "userAgreement": {
+        "label": "Venmo User Agreement",
+        "url": "https://venmo.com/legal/us-user-agreement"
+      },
+      "privacyPolicy": {
+        "label": "Privacy Policy",
+        "url": "https://venmo.com/legal/us-privacy-policy"
+      }
+    },
+    "checkboxes": {
+      "agreeToTerms": {
+        "label": "I agree to the User Agreement and Privacy Policy"
+      }
+    },
+    "buttons": {
+      "primary": "buttons.agreeAndContinue"
+    },
+    "meta": {
+      "legalRequired": true
+    }
   }
 }
