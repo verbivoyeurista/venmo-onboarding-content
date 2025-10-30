@@ -56,5 +56,33 @@
     "tertiary": {
       "resend": "buttons.resendCode"
     }
+  },
+
+  "userName": {
+    "type": "form",
+    "header": "Tell us about you",
+    "helperText": "This helps personalize your Venmo experience.",
+    "fields": {
+      "firstName": {
+        "label": "First name",
+        "placeholder": "Jane"
+      },
+      "lastName": {
+        "label": "Last name",
+        "placeholder": "Doe"
+      },
+      "birthDate": {
+        "label": "Date of birth",
+        "placeholder": "MM/DD/YYYY"
+      },
+      "address": {
+        "label": "Shipping address",
+        "placeholder": "123 Main Street, City, State"
+      }
+    },
+    "legalText": "Your information helps us verify your identity and comply with federal requirements.",
+    "buttons": {
+      "primary": "buttons.next"
+    }
   }
 }
