@@ -22,6 +22,11 @@
         "id": "codeVerification",
         "next": "userName",
         "description": "User enters 6-digit OTP sent via SMS."
+      },
+      {
+        "id": "userName",
+        "next": "legalTerms",
+        "description": "User enters personal information including name, birth date, and address."
       }
     ]
   }
