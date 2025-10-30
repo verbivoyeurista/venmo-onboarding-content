@@ -25,5 +25,5 @@ Each content key can connect directly to Figma Variables for a single source of 
 Designers, writers, and engineers can all work from the same set of structured content.
 
 ## Created by
-**Brittney Villa** — UX Content Designer / Systems Thinker  
+**Brittney Villa** — UX Content Designer / Systems Architecht 
 [thinkloop.co](https://thinkloop.co)
