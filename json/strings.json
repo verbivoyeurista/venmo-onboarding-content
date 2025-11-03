@@ -1,0 +1,32 @@
+{
+  "labels": {
+    "firstName": "First name",
+    "lastName": "Last name",
+    "birthDate": "Date of birth",
+    "address": "Shipping address",
+    "phoneNumber": "Phone number",
+    "verificationCode": "Verification code"
+  },
+  "placeholders": {
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "birthDate": "MM/DD/YYYY",
+    "address": "123 Main Street, City, State",
+    "phoneNumber": "123-456-7890",
+    "verificationCode": "Enter 6-digit code"
+  },
+  "messages": {
+    "verificationSent": "We sent it to {{phone.masked}}",
+    "codeInvalid": "The code you entered is invalid. Try again.",
+    "resendCode": "Resend code"
+  },
+  "legal": {
+    "ageRequirement": "Must be at least 18 years old.",
+    "identityVerification": "Your information helps us verify your identity and comply with federal requirements.",
+    "acceptance": "By tapping Next, you agree to Venmo’s User Agreement and Privacy Policy."
+  },
+  "meta": {
+    "version": "2025-11-03",
+    "source": "Venmo Onboarding Flow"
+  }
+}
