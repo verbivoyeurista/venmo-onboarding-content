@@ -2,31 +2,49 @@
   "flow": {
     "id": "venmoOnboarding",
     "name": "Venmo Onboarding Flow",
+    "description": "Guides users through creating a Venmo account, verifying their identity, and agreeing to legal terms.",
+    "meta": {
+      "version": "2025-10-01",
+      "createdBy": "brittney",
+      "flowType": "userOnboarding",
+      "legalRequired": true
+    },
     "screens": [
       {
         "id": "accountAccess",
+        "type": "screen",
         "next": "accountType",
         "description": "Entry screen where users can create an account or log in."
       },
       {
         "id": "accountType",
+        "type": "halfSheet",
         "next": "phoneVerification",
         "description": "User chooses between Personal, Teen, or Business account types."
       },
       {
         "id": "phoneVerification",
+        "type": "halfSheet",
         "next": "codeVerification",
         "description": "Collect and confirm the user’s phone number."
       },
       {
         "id": "codeVerification",
+        "type": "halfSheet",
         "next": "userName",
         "description": "User enters 6-digit OTP sent via SMS."
       },
       {
         "id": "userName",
+        "type": "form",
         "next": "legalTerms",
         "description": "User enters personal information including name, birth date, and address."
+      },
+      {
+        "id": "legalTerms",
+        "type": "scrollSheet",
+        "next": null,
+        "description": "User reviews and accepts Venmo’s legal agreements to complete onboarding."
       }
     ]
   }
