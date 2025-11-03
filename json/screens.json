@@ -17,10 +17,14 @@
       "teen": { "label": "Teen" },
       "business": { "label": "Business" }
     },
-    "legalText": "Pay and accept money from friends and businesses, emoji and comments encouraged. Must be at least 18 years old.",
-    "buttons": {
-      "primary": "buttons.getStarted"
-    }
+    "legal": {
+      "required": "Pay and accept money from friends and businesses, emoji and comments encouraged. Must be at least 18 years old.",
+      "links": {
+        "tos": { "label": "User Agreement", "url": "https://example.com/terms" }
+      },
+      "meta": { "legalRequired": true, "version": "2025-10-01" }
+    },
+    "buttons": { "primary": "buttons.getStarted" }
   },
 
   "phoneVerification": {
@@ -33,10 +37,11 @@
         "placeholder": "123-456-7890"
       }
     },
-    "legalText": "By tapping Next, you confirm your number and agree to receive a verification code. Carrier fees may apply.",
-    "buttons": {
-      "primary": "buttons.next"
-    }
+    "legal": {
+      "required": "By tapping Next, you confirm your number and agree to receive a verification code. Carrier fees may apply.",
+      "meta": { "legalRequired": true }
+    },
+    "buttons": { "primary": "buttons.next" }
   },
 
   "codeVerification": {
@@ -50,12 +55,8 @@
         "placeholder": "Enter 6-digit code"
       }
     },
-    "buttons": {
-      "primary": "buttons.confirm"
-    },
-    "tertiary": {
-      "resend": "buttons.resendCode"
-    }
+    "buttons": { "primary": "buttons.confirm" },
+    "tertiary": { "resend": "buttons.resendCode" }
   },
 
   "userName": {
@@ -63,53 +64,40 @@
     "header": "Tell us about you",
     "helperText": "This helps personalize your Venmo experience.",
     "fields": {
-      "firstName": {
-        "label": "First name",
-        "placeholder": "Jane"
-      },
-      "lastName": {
-        "label": "Last name",
-        "placeholder": "Doe"
-      },
-      "birthDate": {
-        "label": "Date of birth",
-        "placeholder": "MM/DD/YYYY"
-      },
-      "address": {
-        "label": "Shipping address",
-        "placeholder": "123 Main Street, City, State"
-      }
+      "firstName": { "label": "First name", "placeholder": "Jane" },
+      "lastName": { "label": "Last name", "placeholder": "Doe" },
+      "birthDate": { "label": "Date of birth", "placeholder": "MM/DD/YYYY" },
+      "address": { "label": "Shipping address", "placeholder": "123 Main Street, City, State" }
     },
-    "legalText": "Your information helps us verify your identity and comply with federal requirements.",
-    "buttons": {
-      "primary": "buttons.next"
-    }
+    "legal": {
+      "required": "Your information helps us verify your identity and comply with federal requirements.",
+      "meta": { "legalRequired": true }
+    },
+    "buttons": { "primary": "buttons.next" }
   },
 
   "legalTerms": {
     "type": "scrollSheet",
     "header": "Legal terms",
-    "bodyText": "Please review and accept Venmo’s User Agreement and Privacy Policy before continuing.",
-    "links": {
-      "userAgreement": {
-        "label": "Venmo User Agreement",
-        "url": "https://venmo.com/legal/us-user-agreement"
+    "legal": {
+      "required": "Please review and accept Venmo’s User Agreement and Privacy Policy before continuing.",
+      "links": {
+        "userAgreement": {
+          "label": "Venmo User Agreement",
+          "url": "https://venmo.com/legal/us-user-agreement"
+        },
+        "privacyPolicy": {
+          "label": "Privacy Policy",
+          "url": "https://venmo.com/legal/us-privacy-policy"
+        }
       },
-      "privacyPolicy": {
-        "label": "Privacy Policy",
-        "url": "https://venmo.com/legal/us-privacy-policy"
-      }
+      "meta": { "legalRequired": true }
     },
     "checkboxes": {
       "agreeToTerms": {
         "label": "I agree to the User Agreement and Privacy Policy"
       }
     },
-    "buttons": {
-      "primary": "buttons.agreeAndContinue"
-    },
-    "meta": {
-      "legalRequired": true
-    }
+    "buttons": { "primary": "buttons.agreeAndContinue" }
   }
 }
