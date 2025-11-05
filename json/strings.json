@@ -1,4 +1,9 @@
 {
+  "meta": {
+    "version": "2025-11-03",
+    "source": "Venmo Onboarding Flow"
+  },
+
   "labels": {
     "firstName": "First name",
     "lastName": "Last name",
@@ -7,6 +12,7 @@
     "phoneNumber": "Phone number",
     "verificationCode": "Verification code"
   },
+
   "placeholders": {
     "firstName": "Jane",
     "lastName": "Doe",
@@ -15,18 +21,18 @@
     "phoneNumber": "123-456-7890",
     "verificationCode": "Enter 6-digit code"
   },
+
   "messages": {
+    "verificationIntro": "We’ll send you a verification code.",
     "verificationSent": "We sent it to {{phone.masked}}",
     "codeInvalid": "The code you entered is invalid. Try again.",
     "resendCode": "Resend code"
   },
+
   "legal": {
-    "ageRequirement": "Must be at least 18 years old.",
+    "ageRequirement": "Pay and accept money from friends and businesses, emoji and comments encouraged. Must be at least 18 years old.",
     "identityVerification": "Your information helps us verify your identity and comply with federal requirements.",
-    "acceptance": "By tapping Next, you agree to Venmo’s User Agreement and Privacy Policy."
-  },
-  "meta": {
-    "version": "2025-11-03",
-    "source": "Venmo Onboarding Flow"
+    "acceptance": "Please review and accept Venmo’s User Agreement and Privacy Policy before continuing.",
+    "smsConsent": "By tapping Next, you confirm your number and agree to receive a verification code. Carrier fees may apply."
   }
 }
