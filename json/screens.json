@@ -18,7 +18,7 @@
       "business": { "label": "Business" }
     },
     "legal": {
-      "required": "Pay and accept money from friends and businesses, emoji and comments encouraged. Must be at least 18 years old.",
+      "required": "strings.legal.ageRequirement",
       "links": {
         "tos": { "label": "User Agreement", "url": "https://example.com/terms" }
       },
@@ -33,8 +33,8 @@
     "helperText": "We’ll send you a verification code.",
     "fields": {
       "phone": {
-        "label": "Phone number",
-        "placeholder": "123-456-7890"
+        "label": "strings.labels.phoneNumber",
+        "placeholder": "strings.placeholders.phoneNumber"
       }
     },
     "legal": {
@@ -47,12 +47,12 @@
   "codeVerification": {
     "type": "halfSheet",
     "header": "Enter the code",
-    "helperText": "We sent it to {{phone.masked}}",
+    "helperText": "strings.messages.verificationSent",
     "fields": {
       "otp": {
-        "label": "Verification code",
+        "label": "strings.labels.verificationCode",
         "digits": 6,
-        "placeholder": "Enter 6-digit code"
+        "placeholder": "strings.placeholders.verificationCode"
       }
     },
     "buttons": { "primary": "buttons.confirm" },
@@ -64,13 +64,25 @@
     "header": "Tell us about you",
     "helperText": "This helps personalize your Venmo experience.",
     "fields": {
-      "firstName": { "label": "First name", "placeholder": "Jane" },
-      "lastName": { "label": "Last name", "placeholder": "Doe" },
-      "birthDate": { "label": "Date of birth", "placeholder": "MM/DD/YYYY" },
-      "address": { "label": "Shipping address", "placeholder": "123 Main Street, City, State" }
+      "firstName": {
+        "label": "strings.labels.firstName",
+        "placeholder": "strings.placeholders.firstName"
+      },
+      "lastName": {
+        "label": "strings.labels.lastName",
+        "placeholder": "strings.placeholders.lastName"
+      },
+      "birthDate": {
+        "label": "strings.labels.birthDate",
+        "placeholder": "strings.placeholders.birthDate"
+      },
+      "address": {
+        "label": "strings.labels.address",
+        "placeholder": "strings.placeholders.address"
+      }
     },
     "legal": {
-      "required": "Your information helps us verify your identity and comply with federal requirements.",
+      "required": "strings.legal.identityVerification",
       "meta": { "legalRequired": true }
     },
     "buttons": { "primary": "buttons.next" }
@@ -80,7 +92,7 @@
     "type": "scrollSheet",
     "header": "Legal terms",
     "legal": {
-      "required": "Please review and accept Venmo’s User Agreement and Privacy Policy before continuing.",
+      "required": "strings.legal.acceptance",
       "links": {
         "userAgreement": {
           "label": "Venmo User Agreement",
