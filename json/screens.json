@@ -28,21 +28,21 @@
   },
 
   "phoneVerification": {
-    "type": "halfSheet",
-    "header": "What’s your number?",
-    "helperText": "We’ll send you a verification code.",
-    "fields": {
-      "phone": {
-        "label": "strings.labels.phoneNumber",
-        "placeholder": "strings.placeholders.phoneNumber"
-      }
-    },
-    "legal": {
-      "required": "By tapping Next, you confirm your number and agree to receive a verification code. Carrier fees may apply.",
-      "meta": { "legalRequired": true }
-    },
-    "buttons": { "primary": "buttons.next" }
+  "type": "halfSheet",
+  "header": "What’s your number?",
+  "helperText": "strings.messages.verificationIntro",
+  "fields": {
+    "phone": {
+      "label": "strings.labels.phoneNumber",
+      "placeholder": "strings.placeholders.phoneNumber"
+    }
   },
+  "legal": {
+    "required": "strings.legal.smsConsent",
+    "meta": { "legalRequired": true }
+  },
+  "buttons": { "primary": "buttons.next" }
+},
 
   "codeVerification": {
     "type": "halfSheet",
